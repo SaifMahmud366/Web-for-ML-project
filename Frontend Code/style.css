@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding :0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(#e7baff);
+}
+/*drop and down menu*/
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+#drop-area{
+    width: 500px;
+    height:300px;
+    padding: 30px;
+    text-align: center;
+    background:#fff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px lightblue,-5px -5px 10px lightblue;
+
+}
+#img-icon{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background: #f7f8ff;
+    background-position: center;
+    background-size: cover;
+}
+#img-icon img{
+    margin-top: 25px;
+    width: 100px;
+}
+#img-icon p{
+    color:#222222;
+    font-size: 20px;
+}
+span{
+    color: #527BE9;
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    padding: 0px 100px;
+    height: 75px;
+    position: fixed;
+    background:white;
+};
+nav .logo  {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    color:rgb(55, 52, 52);
+}
+.log{
+    font-size: 30px;
+}
+nav .logo:hover .log{
+    color: #527BE9;
+}
+.logo  span{
+    color:rgb(55, 52, 52);
+    padding-left: 10px;
+    text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 3px black;
+    font-size: 35px;
+}
+
+
+.waves-header{
+    display: flex;
+    background:#85d7f7;
+    background-position: fixed;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border: #7f0099;
+    
+}
+.card-container{
+    box-sizing: border-box;
+    display: flex;
+}
+.card{
+    width: 180px;
+    margin: 15px;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 4px black;
+    border-radius: 20px;
+}
+.img-style{
+    width: 180px;
+    border-radius: 20px;
+    height: 150px;
+}
+.card-body{
+    padding:10px;
+}
+.card-title{
+    font-size: 20px;
+    text-align: center;
+    color:white;
+}
+.card-description{
+    text-align: justify;
+    align-items: center;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
+}

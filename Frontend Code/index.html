@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Integrity Monitoring System</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="stylesheet" href="style.css"/> -->
+  <style>
+    *{
+      margin:0;
+      padding :0;
+      box-sizing: border-box;
+      font-family:'Poppins',sans-serif;
+  }
+  .main{
+      width: 100%;
+      min-height: 100vh;
+      background:linear-gradient(#e7baff);
+  }
+  /*drop and down menu*/
+  .container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 100vh;
+  }
+  #drop-area{
+      width: 500px;
+      height:300px;
+      padding: 30px;
+      text-align: center;
+      background:#fff;
+      border-radius: 20px;
+      box-shadow: 5px 5px 10px lightblue,-5px -5px 10px lightblue;
+  
+  }
+  #img-icon{
+      height: 100%;
+      width: 100%;
+      border-radius: 20px;
+      background: #f7f8ff;
+      background-position: center;
+      background-size: cover;
+  }
+  #img-icon img{
+      margin-top: 25px;
+      width: 100px;
+  }
+  #img-icon p{
+      color:#222222;
+      font-size: 20px;
+  }
+  span{
+      color: #527BE9;
+  }
+  
+  nav{
+      width: 100%;
+      height: 70px;
+      line-height: 70px;
+      padding: 0px 100px;
+      height: 75px;
+      position: fixed;
+      background:white;
+  };
+  nav .logo  {
+      text-decoration: none;
+      font-size: 30px;
+      font-weight: bold;
+      float: left;
+      letter-spacing: 1.5px;
+      cursor: pointer;
+      color:rgb(55, 52, 52);
+  }
+  .log{
+      font-size: 30px;
+  }
+  nav .logo:hover .log{
+      color: #527BE9;
+  }
+  .logo  span{
+      color:rgb(55, 52, 52);
+      padding-left: 10px;
+      text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 3px black;
+      font-size: 35px;
+  }
+  
+  
+  .waves-header{
+      display: flex;
+      background:#85d7f7;
+      background-position: fixed;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      border: #7f0099;
+      
+  }
+  .card-container{
+      box-sizing: border-box;
+      display: flex;
+  }
+  .card{
+      width: 180px;
+      margin: 15px;
+      box-sizing: border-box;
+      box-shadow: 1px 2px 4px black;
+      border-radius: 20px;
+  }
+  .img-style{
+      width: 180px;
+      border-radius: 20px;
+      height: 150px;
+  }
+  .card-body{
+      padding:10px;
+  }
+  .card-title{
+      font-size: 20px;
+      text-align: center;
+      color:white;
+  }
+  .card-description{
+      text-align: justify;
+      align-items: center;
+      line-height: 1.5;
+      color: white;
+      text-align: center;
+  }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <nav>
+      <div class="logo">
+       <i href="#"><i class="fa fa-layer-group log"></i></i><span>Vehicle Integrity Monitoring System</span>
+      </div>
+    </nav>
+    <div class="container">
+        <label for="input-file" id="drop-area">
+          <input type="file" accept="image/*" id="input-file" hidden>
+          <div id="img-icon">
+            <!-- <img src="image/icon.png"> -->
+            
+            <p >Drag and drop an image or <span>browse</span></p>
+          </div>
+        </label>
+    </div>
+    <div class="waves-header">
+      <div class="card-container">
+        <div class="card">
+          <img class="img-style"src="fimg/mithu.jpg" alt="Profile">
+          <div class="card-body">
+            <div class="card-title">
+                Monowar Hossain
+            </div>
+            <div class="card-description">
+              <p>North Western University<br>Khulna</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img class="img-style"src="fimg/mithu.jpg" alt="Profile">
+          <div class="card-body">
+            <div class="card-title">
+              Saif Mahmud Khan
+            </div>
+            <div class="card-description">
+              <p>North Western University<br>Khulna</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+
+  </div>
+</body>
+</html>
